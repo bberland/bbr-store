@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "name": "Shingeky No Kyojin #1",
+    "description": "Lorem ipsum ...",
+    "price": 1000,
+    "img": "https://dummyimage.com/200x200/000"
+  },
+  {
+    "id": 2,
+    "name": "Shingeky No Kyojin #2",
+    "description": "Lorem ipsum ...",
+    "price": 1000,
+    "img": "https://dummyimage.com/200x200/000"
+  },
+  {
+    "id": 3,
+    "name": "Shingeky No Kyojin #3",
+    "description": "Lorem ipsum ...",
+    "price": 1000,
+    "img": "https://dummyimage.com/200x200/000"
+  },
+  {
+    "id": 4,
+    "name": "Shingeky No Kyojin #4",
+    "description": "Lorem ipsum ...",
+    "price": 1000,
+    "img": "https://dummyimage.com/200x200/000"
+  },
+  {
+    "id": 5,
+    "name": "Shingeky No Kyojin #5",
+    "description": "Lorem ipsum ...",
+    "price": 1000,
+    "img": "https://dummyimage.com/200x200/000"
+  },
+  {
+    "id": 6,
+    "name": "Shingeky No Kyojin #6",
+    "description": "Lorem ipsum ...",
+    "price": 1000,
+    "img": "https://dummyimage.com/200x200/000"
+  }
+]

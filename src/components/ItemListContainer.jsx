@@ -1,33 +1,23 @@
-import Container from 'react-bootstrap/Container'
-import Row from 'react-bootstrap/Row'
-import Col from 'react-bootstrap/Col'
-import Card from 'react-bootstrap/Card'
+import { useEffect, useState } from "react";
+import { getData } from "../helpers/getData";
+import { ItemList } from "./ItemList";
 
 export const ItemListContainer = () => {
+  const [products, setProducts] = useState([]);
+
+  useEffect(() => {
+    getData()
+      .then((res) => {
+        setProducts(res);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }, []);
+
   return (
-    <Container fluid='md'>
-      <h2>Best Sellers</h2>
-      <Row className='mb-2'>
-        <Col>
-          <Card>
-            <Card.Body>Item Test #1.</Card.Body>
-          </Card>
-        </Col>
-      </Row>
-      <Row className='mb-2'>
-        <Col>
-          <Card>
-            <Card.Body>Item Test #2.</Card.Body>
-          </Card>
-        </Col>
-      </Row>
-      <Row className='mb-2'>
-        <Col>
-          <Card>
-            <Card.Body>Item Test #3.</Card.Body>
-          </Card>
-        </Col>
-      </Row>
-    </Container>
-  )
-}
+    <>
+      <ItemList products={products} />
+    </>
+  );
+};
