@@ -14,7 +14,6 @@ export const useProducts = (categoryId) => {
         .then(res => {
           categoryId != 0
             ? setProducts(res.filter(p => p.categoryId === Number(categoryId)))
-            // ? setProducts(res)
             : setProducts(res)
         })
         .catch((err) => console.log(err))

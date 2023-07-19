@@ -1,13 +1,16 @@
-import Container from "react-bootstrap/Container"
-import Row from "react-bootstrap/Row"
+import { Container, Row } from 'react-bootstrap'
 import { Item } from "./Item"
 
 
-export const ItemList = ({products}) => {
+export const ItemList = ({products, categoryId}) => {
   return (
     <div>
       <Container fluid="sm">
-        <h2>Products</h2>
+        {
+          categoryId == 0 
+            ? <h2>Products</h2>
+            : <h2>Category {categoryId}</h2>
+        }
         <hr />
         <Row>
           { 

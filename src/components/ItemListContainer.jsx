@@ -1,5 +1,4 @@
-import { ItemList } from "./ItemList"
-import { Loading } from "./Loading"
+import { ItemList, Loading } from "./"
 import { useProducts } from "../hooks/useProducts"
 import { useParams } from "react-router-dom"
 
@@ -15,7 +14,7 @@ export const ItemListContainer = () => {
       {
         isLoading
           ? <Loading />
-          : <ItemList products={products} />
+          : <ItemList products={products} categoryId={categoryId} />
       }
     </>
   )

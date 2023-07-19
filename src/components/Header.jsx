@@ -1,10 +1,7 @@
-import Container from 'react-bootstrap/Container'
-import Nav from 'react-bootstrap/Nav'
-import Navbar from 'react-bootstrap/Navbar'
-import NavDropdown from 'react-bootstrap/NavDropdown'
+import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap'
 import { CartWidget } from './CartWidget'
-import homeIcon from '../assets/homeIcon.svg'
 import { Link } from 'react-router-dom'
+import homeIcon from '../assets/homeIcon.svg'
 
 export const Header = () => {
 
@@ -17,7 +14,7 @@ export const Header = () => {
   return (
     <Navbar bg="dark" sticky="top">
       <Container>
-        <Navbar.Brand href="/home">
+        <Navbar.Brand href="/">
           <img
             src={homeIcon}
             width="30"
