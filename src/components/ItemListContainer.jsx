@@ -1,23 +1,22 @@
-import { useEffect, useState } from "react";
-import { getData } from "../helpers/getData";
-import { ItemList } from "./ItemList";
+import { ItemList } from "./ItemList"
+import { Loading } from "./Loading"
+import { useProducts } from "../hooks/useProducts"
+import { useParams } from "react-router-dom"
 
 export const ItemListContainer = () => {
-  const [products, setProducts] = useState([]);
+  const {categoryId} = useParams()
+  const {products, isLoading} = useProducts(categoryId)
 
-  useEffect(() => {
-    getData()
-      .then((res) => {
-        setProducts(res);
-      })
-      .catch((err) => {
-        console.log(err);
-      });
-  }, []);
+  console.log(categoryId);
+  console.log(products);
 
   return (
     <>
-      <ItemList products={products} />
+      {
+        isLoading
+          ? <Loading />
+          : <ItemList products={products} />
+      }
     </>
-  );
-};
+  )
+}

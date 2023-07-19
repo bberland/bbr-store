@@ -1,44 +1,67 @@
 [
   {
     "id": 1,
-    "name": "Shingeky No Kyojin #1",
+    "name": "Jujutsu Kaisen #1",
     "description": "Lorem ipsum ...",
     "price": 1000,
-    "img": "https://dummyimage.com/200x200/000"
+    "img": "https://dummyimage.com/200x200/000",
+    "categoryId": 1
   },
   {
     "id": 2,
-    "name": "Shingeky No Kyojin #2",
+    "name": "Jujutsu Kaisen #2",
     "description": "Lorem ipsum ...",
     "price": 1000,
-    "img": "https://dummyimage.com/200x200/000"
+    "img": "https://dummyimage.com/200x200/000",
+    "categoryId": 1
+    
   },
   {
     "id": 3,
-    "name": "Shingeky No Kyojin #3",
+    "name": "Jujutsu Kaisen #3",
     "description": "Lorem ipsum ...",
     "price": 1000,
-    "img": "https://dummyimage.com/200x200/000"
+    "img": "https://dummyimage.com/200x200/000",
+    "categoryId": 1
   },
   {
     "id": 4,
-    "name": "Shingeky No Kyojin #4",
+    "name": "Jujutsu Kaisen #4",
     "description": "Lorem ipsum ...",
     "price": 1000,
-    "img": "https://dummyimage.com/200x200/000"
+    "img": "https://dummyimage.com/200x200/000",
+    "categoryId": 2
   },
   {
     "id": 5,
-    "name": "Shingeky No Kyojin #5",
+    "name": "Jujutsu Kaisen #5",
     "description": "Lorem ipsum ...",
     "price": 1000,
-    "img": "https://dummyimage.com/200x200/000"
+    "img": "https://dummyimage.com/200x200/000",
+    "categoryId": 2
   },
   {
     "id": 6,
-    "name": "Shingeky No Kyojin #6",
+    "name": "Jujutsu Kaisen #6",
     "description": "Lorem ipsum ...",
     "price": 1000,
-    "img": "https://dummyimage.com/200x200/000"
+    "img": "https://dummyimage.com/200x200/000",
+    "categoryId": 2
+  },
+  {
+    "id": 7,
+    "name": "Jujutsu Kaisen #7",
+    "description": "Lorem ipsum ...",
+    "price": 1000,
+    "img": "https://dummyimage.com/200x200/000",
+    "categoryId": 3
+  },
+  {
+    "id": 8,
+    "name": "Jujutsu Kaisen #8",
+    "description": "Lorem ipsum ...",
+    "price": 1000,
+    "img": "https://dummyimage.com/200x200/000",
+    "categoryId": 3
   }
 ]

@@ -4,20 +4,20 @@ import Navbar from 'react-bootstrap/Navbar'
 import NavDropdown from 'react-bootstrap/NavDropdown'
 import { CartWidget } from './CartWidget'
 import homeIcon from '../assets/homeIcon.svg'
-import shoppingCart from '../assets/shoppingCart.svg'
+import { Link } from 'react-router-dom'
 
-export const NavBar = () => {
+export const Header = () => {
 
   const categories = [
-    { id: 1, url: '#category/1', name: 'Category 1' }, 
-    { id: 2, url: '#category/2', name: 'Category 2' }, 
-    { id: 3, url: '#category/3', name: 'Category 3' },
+    { id: 1, url: '/1/products', name: 'Category 1' }, 
+    { id: 2, url: '/2/products', name: 'Category 2' }, 
+    { id: 3, url: '/3/products', name: 'Category 3' },
   ]
 
   return (
-    <Navbar bg="dark" data-bs-theme="dark">
+    <Navbar bg="dark" sticky="top">
       <Container>
-        <Navbar.Brand href="#home">
+        <Navbar.Brand href="/home">
           <img
             src={homeIcon}
             width="30"
@@ -29,12 +29,13 @@ export const NavBar = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#link">Offers</Nav.Link>
+            <Nav.Link as={Link} to="/">Home</Nav.Link>
+            <Nav.Link as={Link} to="/news">News</Nav.Link>
+            <Nav.Link as={Link} to="/0/products">Products</Nav.Link>
             <NavDropdown title="Categories" id="basic-nav-dropdown">
               {
                 categories.map(({id, url, name}) => (
-                  <NavDropdown.Item href={url} key={id}>{name}</NavDropdown.Item>
+                  <NavDropdown.Item as={Link} to={url} key={id}>{name}</NavDropdown.Item>
                 ))
               }
             </NavDropdown>

@@ -1,14 +1,20 @@
-import { NavBar } from './components/NavBar'
-import { ItemListContainer } from './components/ItemListContainer'
 import 'bootstrap/dist/css/bootstrap.min.css'
+import { Home, News, Header, ItemListContainer, ItemDetailContainer } from './components'
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
 
 function App() {
   return (
-    <div data-bs-theme="dark">
-      <NavBar />
-      <br />
-      <ItemListContainer greeting={'Bienvenido a mi tienda'}/>
-    </div>
+    <BrowserRouter>
+        <Header />
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/news' element={<News />} />
+          <Route path='/products' element={<ItemListContainer />} />
+          <Route path='/:categoryId/products' element={<ItemListContainer />} />
+          <Route path='/products/:productId' element={<ItemDetailContainer />} />
+          <Route path='*' element={ <Navigate to='/products' />} />
+        </Routes>
+    </BrowserRouter>
   )
 }
 
