@@ -7,15 +7,13 @@ import { ItemDetail } from "./ItemDetail"
 export const ItemDetailContainer = () => {
   const {productId} = useParams()
   const {product, isLoading} = useProductDetail(productId)
-
-  console.log(product)
   
   return (
     <>
       {
         isLoading
           ? <Loading />
-          : <ItemDetail product={product} />
+          : <ItemDetail item={product} />
       }
     </>
   )

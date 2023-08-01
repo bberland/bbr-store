@@ -6,8 +6,6 @@ export const useProductDetail = (productId) => {
     const [product, setProduct] = useState([])
     const [isLoading, setIsLoading] = useState(true)
 
-    console.log(productId)
-
     useEffect(() => {
       setIsLoading(true)
       getData()

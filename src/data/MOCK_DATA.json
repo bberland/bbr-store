@@ -3,65 +3,72 @@
     "id": 1,
     "name": "Jujutsu Kaisen Vol #1",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu tortor sit amet odio elementum lobortis. Proin sagittis euismod lorem id malesuada. Praesent convallis luctus enim non maximus. Nullam tristique nulla lacus, vel eleifend arcu pulvinar nec. Donec fermentum vestibulum dui, eget egestas orci fermentum a.",
-    "price": 25,
-    "img": "/public/products/product1.jpeg",
-    "categoryId": 1
+    "price": 25.00,
+    "img": "/products/product1.jpeg",
+    "categoryId": 1,
+    "stock": 10
   },
   {
     "id": 2,
     "name": "Jujutsu Kaisen Vol #2",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu tortor sit amet odio elementum lobortis. Proin sagittis euismod lorem id malesuada. Praesent convallis luctus enim non maximus. Nullam tristique nulla lacus, vel eleifend arcu pulvinar nec. Donec fermentum vestibulum dui, eget egestas orci fermentum a.",
-    "price": 25,
-    "img": "/public/products/product1.jpeg",
-    "categoryId": 1
-    
+    "price": 25.00,
+    "img": "/products/product1.jpeg",
+    "categoryId": 1,
+    "stock": 10
   },
   {
     "id": 3,
     "name": "Jujutsu Kaisen Vol #3",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu tortor sit amet odio elementum lobortis. Proin sagittis euismod lorem id malesuada. Praesent convallis luctus enim non maximus. Nullam tristique nulla lacus, vel eleifend arcu pulvinar nec. Donec fermentum vestibulum dui, eget egestas orci fermentum a.",
-    "price": 25,
-    "img": "/public/products/product1.jpeg",
-    "categoryId": 1
+    "price": 25.00,
+    "img": "/products/product1.jpeg",
+    "categoryId": 1,
+    "stock": 10
   },
   {
     "id": 4,
     "name": "Jujutsu Kaisen Vol #4",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu tortor sit amet odio elementum lobortis. Proin sagittis euismod lorem id malesuada. Praesent convallis luctus enim non maximus. Nullam tristique nulla lacus, vel eleifend arcu pulvinar nec. Donec fermentum vestibulum dui, eget egestas orci fermentum a.",
-    "price": 25,
-    "img": "/public/products/product1.jpeg",
-    "categoryId": 2
+    "price": 25.00,
+    "img": "/products/product1.jpeg",
+    "categoryId": 2,
+    "stock": 10
   },
   {
     "id": 5,
     "name": "Jujutsu Kaisen Vol #5",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu tortor sit amet odio elementum lobortis. Proin sagittis euismod lorem id malesuada. Praesent convallis luctus enim non maximus. Nullam tristique nulla lacus, vel eleifend arcu pulvinar nec. Donec fermentum vestibulum dui, eget egestas orci fermentum a.",
-    "price": 25,
-    "img": "/public/products/product1.jpeg",
-    "categoryId": 2
+    "price": 25.00,
+    "img": "/products/product1.jpeg",
+    "categoryId": 2,
+    "stock": 10
   },
   {
     "id": 6,
     "name": "Jujutsu Kaisen Vol #6",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu tortor sit amet odio elementum lobortis. Proin sagittis euismod lorem id malesuada. Praesent convallis luctus enim non maximus. Nullam tristique nulla lacus, vel eleifend arcu pulvinar nec. Donec fermentum vestibulum dui, eget egestas orci fermentum a.",
-    "price": 25,
-    "img": "/public/products/product1.jpeg",
-    "categoryId": 2
+    "price": 25.00,
+    "img": "/products/product1.jpeg",
+    "categoryId": 2,
+    "stock": 10
   },
   {
     "id": 7,
     "name": "Jujutsu Kaisen Vol #7",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu tortor sit amet odio elementum lobortis. Proin sagittis euismod lorem id malesuada. Praesent convallis luctus enim non maximus. Nullam tristique nulla lacus, vel eleifend arcu pulvinar nec. Donec fermentum vestibulum dui, eget egestas orci fermentum a.",
-    "price": 25,
-    "img": "/public/products/product1.jpeg",
-    "categoryId": 3
+    "price": 25.00,
+    "img": "/products/product1.jpeg",
+    "categoryId": 3,
+    "stock": 10
   },
   {
     "id": 8,
     "name": "Jujutsu Kaisen Vol #8",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu tortor sit amet odio elementum lobortis. Proin sagittis euismod lorem id malesuada. Praesent convallis luctus enim non maximus. Nullam tristique nulla lacus, vel eleifend arcu pulvinar nec. Donec fermentum vestibulum dui, eget egestas orci fermentum a.",
-    "price": 25,
-    "img": "/public/products/product1.jpeg",
-    "categoryId": 3
+    "price": 25.00,
+    "img": "/products/product1.jpeg",
+    "categoryId": 3,
+    "stock": 10
   }
 ]

@@ -6,9 +6,6 @@ export const ItemListContainer = () => {
   const {categoryId} = useParams()
   const {products, isLoading} = useProducts(categoryId)
 
-  console.log(categoryId);
-  console.log(products);
-
   return (
     <>
       {

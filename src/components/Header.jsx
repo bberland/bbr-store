@@ -14,7 +14,7 @@ export const Header = () => {
   return (
     <Navbar bg="dark" sticky="top">
       <Container>
-        <Navbar.Brand href="/">
+        <Navbar.Brand as={Link} to="/">
           <img
             src={homeIcon}
             width="30"

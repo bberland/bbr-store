@@ -12,7 +12,7 @@ export const Item = ({item}) => {
             <Card.Text><Badge bg="dark" className="px-1">USD {item.price}</Badge></Card.Text>
         </Card.Body>
         <Card.Footer>
-            <Button variant="primary">Add to cart</Button>
+            <Button variant="primary" as={Link} to={`/products/${item.id}`}>View detail</Button>
         </Card.Footer>
         </Card>
     </Col>
