@@ -1,6 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css'
 import { Home, News, Header, ItemListContainer, ItemDetailContainer, CartDetail, NotFound } from './components'
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
+import { BrowserRouter, Routes, Route, Navigate, HashRouter } from 'react-router-dom'
 import { CartContext, CartContextProvider } from './contexts/CartContext'
 import { useState } from 'react'
 
@@ -8,7 +8,7 @@ function App() {
 
   return (
     <CartContextProvider>
-      <BrowserRouter>
+      <HashRouter>
           <Header />
           <Routes>
             <Route path='/' element={<Home />} />
@@ -19,7 +19,7 @@ function App() {
             <Route path='/404' element={<NotFound />} />
             <Route path='*' element={ <Navigate to='/404' />} />
           </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </CartContextProvider>
   )
 }

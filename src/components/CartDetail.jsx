@@ -18,7 +18,7 @@ export const CartDetail = () => {
                   <div className="fw-bold">{item.name}</div>
                   Quantity: {item.quantity}
                 </div>
-                <Button className="ml-3" variant="danger" onClick={() => removeFromCart(item.id)}>-</Button>
+                <Button className="ml-3" variant="secondary" onClick={() => removeFromCart(item.id)}>-</Button>
               </ListGroup.Item>
           ))
         }
