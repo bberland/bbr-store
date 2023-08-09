@@ -8,18 +8,16 @@ function App() {
 
   return (
     <CartContextProvider>
-      {/* <HashRouter> */}
-          <Header />
-          <Routes>
-            <Route path='/' element={<Home />} />
-            <Route path='/news' element={<News />} />
-            <Route path='/:categoryId/products' element={<ItemListContainer />} />
-            <Route path='/products/:productId' element={<ItemDetailContainer />} />
-            <Route path='/cart' element={<CartDetail />} />
-            <Route path='/404' element={<NotFound />} />
-            <Route path='*' element={ <Navigate to='/404' />} />
-          </Routes>
-      {/* </HashRouter> */}
+        <Header />
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/news' element={<News />} />
+          <Route path='/:categoryId/products' element={<ItemListContainer />} />
+          <Route path='/products/:productId' element={<ItemDetailContainer />} />
+          <Route path='/cart' element={<CartDetail />} />
+          <Route path='/404' element={<NotFound />} />
+          <Route path='*' element={ <Navigate to='/404' />} />
+        </Routes>
     </CartContextProvider>
   )
 }

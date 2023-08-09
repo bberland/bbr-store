@@ -15,7 +15,7 @@ export const ItemCount = ({max, quantity, setQuantity, add}) => {
       <Button variant="dark" onClick={handleSub}>-</Button>
       <span className="mx-2">{quantity}</span>
       <Button variant="dark" onClick={handleAdd}>+</Button>
-      <Button onClick={add} className="mx-2" variant="primary">Add to cart</Button>
+      <Button onClick={add} className="mx-2 rounded-pill" variant="primary">Add to cart</Button>
     </div>
   )
 }

@@ -24,7 +24,7 @@
     "price": 25.00,
     "img": "/products/product1.jpeg",
     "categoryId": 1,
-    "stock": 10
+    "stock": 5
   },
   {
     "id": 4,

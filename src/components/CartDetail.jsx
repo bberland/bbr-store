@@ -2,14 +2,27 @@ import { useContext } from "react"
 import { Badge, Button, Container, ListGroup } from "react-bootstrap"
 import { CartContext } from "../contexts/CartContext"
 import { FaTrashCan, FaBroom, FaArrowRight } from 'react-icons/fa6'
+import { Link } from 'react-router-dom'
 
 export const CartDetail = () => {
-  const {cart, removeFromCart, getTotal} = useContext(CartContext)
+  const {cart, removeFromCart, cleanCart, getTotal} = useContext(CartContext)
+
+  if (cart.length === 0) {
+    return (
+      <Container fluid="sm">
+        <div>
+          <h2>Your Cart is empty 😢</h2>
+          <hr />
+        </div>
+        <Button className="mt-3 rounded-pill" variant="primary" as={Link} to="/0/products"><FaArrowRight /> Go Shopping</Button>
+      </Container>
+    )
+  }
 
   return (
     <Container fluid="sm">
       <div>
-        <h2>Cart</h2>
+        <h2>Your Cart</h2>
         <hr />
         <ListGroup as="ol" numbered>
         {
@@ -25,12 +38,11 @@ export const CartDetail = () => {
         }
         </ListGroup>
         <br />
-        <Button className="mt-6" variant="danger"><FaBroom /> Clean Cart</Button>
+        <Button className="mt-6 rounded-pill" variant="secondary" onClick={cleanCart}><FaBroom /> Clean Cart</Button>
       </div>
       <hr />
-      <span>Total: USD {getTotal()}</span>
-      <br />
-      <Button className="mt-3" variant="primary"><FaArrowRight /> Go to Payment</Button>
+      <h5>Total: USD {getTotal()}</h5>
+      <Button className="mt-3 rounded-pill" variant="primary"><FaArrowRight /> Go to Payment</Button>
     </Container>
   )
 }
