@@ -8,7 +8,7 @@ function App() {
 
   return (
     <CartContextProvider>
-      <HashRouter>
+      {/* <HashRouter> */}
           <Header />
           <Routes>
             <Route path='/' element={<Home />} />
@@ -19,7 +19,7 @@ function App() {
             <Route path='/404' element={<NotFound />} />
             <Route path='*' element={ <Navigate to='/404' />} />
           </Routes>
-      </HashRouter>
+      {/* </HashRouter> */}
     </CartContextProvider>
   )
 }

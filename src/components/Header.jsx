@@ -40,9 +40,7 @@ export const Header = () => {
         </Navbar.Collapse>
         <Navbar.Collapse className="justify-content-end">
           <Navbar.Text>
-              <Nav.Link>
-                <CartWidget />
-              </Nav.Link>
+              <CartWidget />
           </Navbar.Text>
         </Navbar.Collapse>
       </Container>

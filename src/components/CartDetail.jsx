@@ -1,6 +1,7 @@
 import { useContext } from "react"
 import { Badge, Button, Container, ListGroup } from "react-bootstrap"
 import { CartContext } from "../contexts/CartContext"
+import { FaTrashCan, FaBroom, FaArrowRight } from 'react-icons/fa6'
 
 export const CartDetail = () => {
   const {cart, removeFromCart, getTotal} = useContext(CartContext)
@@ -18,18 +19,18 @@ export const CartDetail = () => {
                   <div className="fw-bold">{item.name}</div>
                   Quantity: {item.quantity}
                 </div>
-                <Button className="ml-3" variant="secondary" onClick={() => removeFromCart(item.id)}>-</Button>
+                <Button className="ml-3" variant="secondary" onClick={() => removeFromCart(item.id)}><FaTrashCan /></Button>
               </ListGroup.Item>
           ))
         }
         </ListGroup>
         <br />
-        <Button className="mt-6" variant="danger">Clean Cart</Button>
+        <Button className="mt-6" variant="danger"><FaBroom /> Clean Cart</Button>
       </div>
       <hr />
       <span>Total: USD {getTotal()}</span>
       <br />
-      <Button className="mt-3" variant="primary">Go to Payment</Button>
+      <Button className="mt-3" variant="primary"><FaArrowRight /> Go to Payment</Button>
     </Container>
   )
 }
