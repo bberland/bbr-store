@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
 import { getData } from "../helpers/getData"
-
+import { doc, getDoc } from "firebase/firestore"
+import { db } from "../firebase/config"
 
 export const useProductDetail = (productId) => {
     const [product, setProduct] = useState([])
@@ -8,11 +9,17 @@ export const useProductDetail = (productId) => {
 
     useEffect(() => {
       setIsLoading(true)
-      getData()
-        .then(res => {
-          setProduct(res.find(p => p.id === Number(productId)))
+
+      const itemRef = doc(db, "products", productId)
+
+      getDoc(itemRef)
+        .then((doc) => {
+          setProduct({
+            id: doc.id,
+            ...doc.data()
+          })
         })
-        .catch((err) => console.log(err))
+        .catch((e) => console.log(e))
         .finally(() => setIsLoading(false))
     }, [productId])
 

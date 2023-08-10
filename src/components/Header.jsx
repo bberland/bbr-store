@@ -6,9 +6,9 @@ import homeIcon from '../assets/homeIcon.svg'
 export const Header = () => {
 
   const categories = [
-    { id: 1, url: '/1/products', name: 'Category 1' }, 
-    { id: 2, url: '/2/products', name: 'Category 2' }, 
-    { id: 3, url: '/3/products', name: 'Category 3' },
+    { id: 1, url: '/1/products', name: 'Shonen' }, 
+    { id: 2, url: '/2/products', name: 'Seinen' }, 
+    { id: 3, url: '/3/products', name: 'Isekai' },
   ]
 
   return (
