@@ -2,7 +2,7 @@ import { useContext, useState } from "react"
 import { Button, Container } from "react-bootstrap"
 import { FaCheck } from "react-icons/fa6"
 import { CartContext } from "../contexts/CartContext"
-import { addDoc, collection, doc, documentId, getDocs, query, updateDoc, where, writeBatch } from "firebase/firestore"
+import { addDoc, collection, documentId, getDocs, query, where, writeBatch } from "firebase/firestore"
 import { db } from "../firebase/config"
 import { useNavigate } from 'react-router-dom'
 import { Loading } from "./Loading"
@@ -26,22 +26,8 @@ const schema = Yup.object().shape({
 
 export const Checkout = () => {
   const {cart, getTotalPrice, cleanCart} = useContext(CartContext)
-  const [orderId, setOrderId] = useState(null)
   const [isLoading, setIsLoading] = useState(false)
   const navigate = useNavigate()
-
-  const [values, setValues] = useState({
-    name: '',
-    email: '',
-    address: ''
-  })
-
-  // const handleValues = (e) => {
-  //   setValues({
-  //     ...values,
-  //     [e.target.name]: e.target.value
-  //   })
-  // }
 
   const handleSubmit = async (values) => {
     setIsLoading(true)
@@ -79,7 +65,6 @@ export const Checkout = () => {
       const doc = await addDoc(ordersRef, order)
 
       cleanCart()
-      setOrderId(doc.id)
       navigate(`/orders/${doc.id}`)
     } else {
       alert("There are items without stock left :(")

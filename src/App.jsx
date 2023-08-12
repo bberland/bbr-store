@@ -1,8 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css'
 import { Home, News, Header, ItemListContainer, ItemDetailContainer, CartDetail, NotFound, Checkout, OrderDetail } from './components'
-import { BrowserRouter, Routes, Route, Navigate, HashRouter } from 'react-router-dom'
-import { CartContext, CartContextProvider } from './contexts/CartContext'
-import { useState } from 'react'
+import { Routes, Route, Navigate, HashRouter } from 'react-router-dom'
+import { CartContextProvider } from './contexts/CartContext'
 
 function App() {
 

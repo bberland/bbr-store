@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react"
-import { getData } from "../helpers/getData"
 import { doc, getDoc } from "firebase/firestore"
 import { db } from "../firebase/config"
 import { useNavigate } from "react-router-dom"

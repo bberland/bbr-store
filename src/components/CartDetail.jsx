@@ -1,5 +1,5 @@
 import { useContext } from "react"
-import { Badge, Button, Container, ListGroup } from "react-bootstrap"
+import { Button, Container, ListGroup } from "react-bootstrap"
 import { CartContext } from "../contexts/CartContext"
 import { FaTrashCan, FaBroom, FaArrowRight } from 'react-icons/fa6'
 import { Link } from 'react-router-dom'
