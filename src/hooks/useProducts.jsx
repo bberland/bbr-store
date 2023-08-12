@@ -10,7 +10,7 @@ export const useProducts = (categoryId) => {
       setIsLoading(true)
 
       const productsRef = collection(db, "products")
-      const q = categoryId == 0 
+      const q = categoryId == 0 || categoryId > 3
         ? productsRef
         : query(productsRef, where("categoryId", "==", Number(categoryId)))
 

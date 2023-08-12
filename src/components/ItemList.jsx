@@ -8,8 +8,8 @@ export const ItemList = ({products, categoryId}) => {
       <Container fluid="sm">
         {
           categoryId == 0 
-            ? <h2>Products</h2>
-            : <h2>Category {categoryId}</h2>
+            ? <h2>Products 📚</h2>
+            : <h2>Category {categoryId} 📚</h2>
         }
         <hr />
         <Row>

@@ -5,7 +5,7 @@ import { FaTrashCan, FaBroom, FaArrowRight } from 'react-icons/fa6'
 import { Link } from 'react-router-dom'
 
 export const CartDetail = () => {
-  const {cart, removeFromCart, cleanCart, getTotal} = useContext(CartContext)
+  const {cart, removeFromCart, cleanCart, getTotalPrice} = useContext(CartContext)
 
   if (cart.length === 0) {
     return (
@@ -41,8 +41,8 @@ export const CartDetail = () => {
         <Button className="mt-6 rounded-pill" variant="secondary" onClick={cleanCart}><FaBroom /> Clean Cart</Button>
       </div>
       <hr />
-      <h5>Total: USD {getTotal()}</h5>
-      <Button className="mt-3 rounded-pill" variant="primary"><FaArrowRight /> Go to Payment</Button>
+      <h5>Total: USD {getTotalPrice()}</h5>
+      <Button className="mt-3 rounded-pill" variant="primary" as={Link} to='/checkout'><FaArrowRight /> Go to Payment</Button>
     </Container>
   )
 }
