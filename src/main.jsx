@@ -14,7 +14,7 @@ const routes = [
   }
 ]
 
-const router = createBrowserRouter(routes, { basename: import.meta.env.DEV ? '/' : '/bbr-store/' })
+const router = createBrowserRouter(routes)
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
